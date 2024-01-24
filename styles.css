@@ -8,7 +8,7 @@
 .main {
 	display: flex;
 	flex-direction: column;
-	margin: 75px;
+	margin: 3em 4.5em;
 }
 
 .container {
@@ -19,19 +19,19 @@ h1 {
 	font-size: 40px;
     font-weight: 400;
 	font-family: 'Montserrat', sans-serif;
-	padding-bottom: 10px;
+	line-height: 1em;
 }
 
 h2 {
 	font-size: 20px;
     font-weight: 300;
 	font-family: 'Montserrat', sans-serif;
-	padding-bottom: 10px;
+	padding-bottom: .75em;
 }
 
 a {
 	text-decoration: none;
-	background-color: #ee6c4d;
+	background-color: #333;
 	color: #fff;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
@@ -39,23 +39,27 @@ a {
 }
 
 .g {
-	background-color: #627d49;
+	background-color: #0F9D58;
 }
 
 .b {
-	background-color: #417daf;
+	background-color: #4285F4;
 }
 
 .p {
-	background-color: #D9182B;
+	background-color: #DB4437;
+}
+
+.y {
+	background-color: #F4B400;
 }
 
 p {
-	margin-top: 5px;
+	margin-top: .75em;
 }
 
 hr {
-	margin-top: 15px;
+	margin-top: 1.5em;
 	border: 1px darkgrey dotted;
 	max-width: 30em;
 }
@@ -63,7 +67,11 @@ hr {
 div {
 	margin-top: 1.5em;
 	max-width: 30em;
-	line-height: 1.6em;
+	line-height: 1.5em;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
+}
+
+#writing {
+	margin-top: 1.5em;
 }

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Moirai+One&family=Open+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("iframe").hide();
+				$("p").hide();
+
+				function increaseSize() {
+					$(".yes").animate({
+						height: '+=10px',
+						width: '+=15px',
+						borderRadius: '+=10px',
+						paddingTop: '+=5px'
+					}, 1000, 'linear', function() {
+						increaseSize();
+					});
+				};
+
+				increaseSize();
+
+				$(".no").hover(function() {
+					$(".no").css('margin-left', $(document).width()/2 * Math.random() + 'px');
+					$(".no").css('margin-top', $(document).height()/2 * Math.random() + 'px');
+				})
+
+				$(".yes").click(function() {
+					$("div").hide();
+					$("iframe").show();
+					$("p").show();
+					document.querySelector("audio").play();
+				})
+			});
+		</script>
+		<title>be my valentine? :*</title>
+		<link rel="icon" type="image/x-icon" href="favicon.png">
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				z-index: 0;
+				background-color: blueviolet;
+				color: white;
+				font-family: 'Montserrat', sans-serif;
+			}
+
+			.main {
+				margin: 3em 4.5em;
+			}
+
+			div {
+				position: absolute;
+				top: 0;
+				font-size: 42px;
+			}
+
+			.q {
+				width: 10em;
+			}
+
+			.yes {
+				top: 7em;
+				background-color: green;
+				width: 100px;
+				height: 80px;
+				border-radius: 100px;
+				text-align: center;
+				padding-top: 20px;
+				color: white;
+				z-index: 1;
+			}
+
+			.no {
+				top: 7em;
+				left: 6em;
+				background-color: red;
+				color: white;
+				width: 80px;
+				height: 70px;
+				border-radius: 80px;
+				text-align: center;
+				padding-top: 10px;
+				z-index: 2;
+			}
+
+			img {
+				position: absolute;
+				left: 10em;
+			}
+
+			.an {
+				top: 9em;
+				left: 3em;
+			}
+		</style>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-6YSQM4DLNW"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-6YSQM4DLNW');
+		</script>
+	</head>
+	<body>
+		<div class="main">
+			<div class="q">Hey An! :D Will you be my valentine? 💘💝</div>
+			<div class="yes">Yes!!</div>
+			<div class="no">No</div>
+			<img src="assets/an.png" width="400", height="400" class="an" />
+			<img src="assets/ak.png" width="300" height="360" class="ak" />
+		</div>
+		<iframe style="margin-top: 1em; margin-left: 1em;" src="https://giphy.com/embed/aftvlKz6bGzS0" width="480" height="360" frameBorder="0" class="giphy-embed"></iframe>
+		<audio id="audio" src="assets/kids-cheering-sound-effect.m4a"></audio>
+		<p style="margin-top: 2em; margin-left: 2em;">💝🥳🎉💝🎉🥳💝 YAYYY!!! 💝🎉🥳💝🎉🥳💝</p>
+	</body>
+</html>
